@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nikola Popovic — Research Scientist, INSAIT</title>
+  <meta name="description" content="Nikola Popovic is a Research Scientist at INSAIT building spatial-intelligence systems that reason over 3D maps, digital twins, and video to enable human–robot collaboration.">
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Nikola Popovic — Research Scientist, INSAIT">
+  <meta property="og:description" content="Spatial-intelligence systems reasoning over 3D maps, digital twins, and video — for human–robot collaboration.">
+  <meta property="og:image" content="assets/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Nikola Popovic — Research Scientist, INSAIT">
+  <meta name="twitter:description" content="Spatial-intelligence systems reasoning over 3D maps, digital twins, and video — for human–robot collaboration.">
+  <meta name="twitter:image" content="assets/og-image.png">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <!-- Set theme before paint to avoid a flash of the wrong theme -->
+  <script>
+    (function () {
+      try {
+        // Dark by default; switch to light only if the visitor explicitly chose it.
+        if (localStorage.getItem('theme') === 'light') {
+          document.documentElement.classList.remove('dark');
+        }
+      } catch (e) {}
+    })();
+  </script>
+
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+
+<body class="bg-white text-gray-900 dark:bg-gray-950 dark:text-gray-100 font-sans antialiased">
+
+  <!-- ==================== HEADER / NAV ==================== -->
+  <header class="fixed inset-x-0 top-0 z-50 border-b border-gray-200/70 bg-white/80 backdrop-blur-md dark:border-white/10 dark:bg-gray-950/80">
+    <nav class="mx-auto flex h-16 max-w-content items-center justify-between px-5 sm:px-6">
+      <a href="#top" class="text-sm font-bold tracking-tight">Nikola Popovic<span class="text-accent">.</span></a>
+
+      <div class="hidden items-center gap-7 text-sm font-medium md:flex">
+        <a data-nav="vision" href="#vision" class="nav-link">Vision</a>
+        <a data-nav="about" href="#about" class="nav-link">About</a>
+        <a data-nav="beyond" href="#beyond" class="nav-link">Beyond</a>
+        <a data-nav="projects" href="#projects" class="nav-link">Projects</a>
+      </div>
+
+      <div class="flex items-center gap-1.5">
+        <!-- Theme toggle -->
+        <button id="themeToggle" type="button" aria-label="Toggle dark mode"
+          class="inline-flex h-9 w-9 items-center justify-center rounded-lg border border-gray-200 text-gray-600 transition-colors hover:border-accent hover:text-accent dark:border-gray-700 dark:text-gray-300 dark:hover:border-accent dark:hover:text-accent">
+          <!-- moon (light mode → click for dark) -->
+          <svg class="h-5 w-5 dark:hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+          <!-- sun (dark mode → click for light) -->
+          <svg class="hidden h-5 w-5 dark:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+        </button>
+        <!-- Mobile menu button -->
+        <button id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false"
+          class="inline-flex h-9 w-9 items-center justify-center rounded-lg border border-gray-200 text-gray-600 transition-colors hover:border-accent hover:text-accent dark:border-gray-700 dark:text-gray-300 dark:hover:border-accent dark:hover:text-accent md:hidden">
+          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/></svg>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile menu -->
+    <div id="mobileMenu" class="hidden border-t border-gray-200/70 bg-white px-5 py-3 dark:border-white/10 dark:bg-gray-950 md:hidden">
+      <div class="flex flex-col gap-3 text-sm font-medium">
+        <a data-nav="vision" href="#vision" class="nav-link">Vision</a>
+        <a data-nav="about" href="#about" class="nav-link">About</a>
+        <a data-nav="beyond" href="#beyond" class="nav-link">Beyond</a>
+        <a data-nav="projects" href="#projects" class="nav-link">Projects</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ==================== HERO ==================== -->
+    <section id="top" class="grid-bg border-b border-gray-200/60 dark:border-white/5">
+      <div class="mx-auto max-w-content px-5 sm:px-6 pt-24 pb-14 sm:pt-28">
+        <div class="flex flex-col items-center gap-8 text-center md:flex-row md:items-center md:gap-12 md:text-left">
+          <img src="assets/img/profile.webp" width="176" height="176" alt="Nikola Popovic"
+            class="h-40 w-40 shrink-0 rounded-full object-cover object-top shadow-md ring-1 ring-black/5 sm:h-44 sm:w-44 dark:ring-white/10">
+          <div>
+            <h1 class="text-3xl font-bold tracking-tight sm:text-4xl">Nikola Popovic</h1>
+            <p class="mt-1 text-lg text-gray-500 dark:text-gray-400">
+              Research Scientist at
+              <a href="https://insait.ai/dr-nikola-popovic/" target="_blank" rel="noopener" class="text-accent hover:text-accent-dark">INSAIT</a>
+            </p>
+            <p class="mx-auto mt-4 max-w-xl leading-relaxed text-gray-600 dark:text-gray-300 md:mx-0">
+              Developing spatio-temporal reasoning systems that operate over 3D maps, digital twins, and ego-centric video streams, 
+              aiming to enable collaboration between robots and humans in complex environments.
+            </p>
+            <div class="mt-6 flex flex-wrap items-center justify-center gap-2.5 md:justify-start">
+              <a href="mailto:nikola.popovic@insait.ai"
+                class="inline-flex items-center gap-2 rounded-lg bg-accent px-3.5 py-2 text-sm font-medium text-white transition-colors hover:bg-accent-dark">
+                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                Email
+              </a>
+              <a href="https://www.linkedin.com/in/nikola-popovic-172252113/" target="_blank" rel="noopener"
+                class="inline-flex items-center gap-2 rounded-lg border border-gray-200 px-3.5 py-2 text-sm font-medium text-gray-700 transition-colors hover:border-accent hover:text-accent dark:border-gray-700 dark:text-gray-300 dark:hover:border-accent dark:hover:text-accent">
+                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/></svg>
+                LinkedIn
+              </a>
+              <a href="https://scholar.google.com/citations?user=aY2lypgAAAAJ&hl=en" target="_blank" rel="noopener"
+                class="inline-flex items-center gap-2 rounded-lg border border-gray-200 px-3.5 py-2 text-sm font-medium text-gray-700 transition-colors hover:border-accent hover:text-accent dark:border-gray-700 dark:text-gray-300 dark:hover:border-accent dark:hover:text-accent">
+                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg>
+                Scholar
+              </a>
+              <a href="https://github.com/nikola3794" target="_blank" rel="noopener"
+                class="inline-flex items-center gap-2 rounded-lg border border-gray-200 px-3.5 py-2 text-sm font-medium text-gray-700 transition-colors hover:border-accent hover:text-accent dark:border-gray-700 dark:text-gray-300 dark:hover:border-accent dark:hover:text-accent">
+                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                GitHub
+              </a>
+              <a href="https://insait.ai/dr-nikola-popovic/" target="_blank" rel="noopener"
+                class="inline-flex items-center gap-2 rounded-lg border border-gray-200 px-3.5 py-2 text-sm font-medium text-gray-700 transition-colors hover:border-accent hover:text-accent dark:border-gray-700 dark:text-gray-300 dark:hover:border-accent dark:hover:text-accent">
+                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+                INSAIT
+              </a>
+              <a href="assets/cv.pdf" target="_blank"
+                class="inline-flex items-center gap-2 rounded-lg border border-gray-200 px-3.5 py-2 text-sm font-medium text-gray-700 transition-colors hover:border-accent hover:text-accent dark:border-gray-700 dark:text-gray-300 dark:hover:border-accent dark:hover:text-accent">
+                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/></svg>
+                CV
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== RESEARCH VISION ==================== -->
+    <section id="vision" class="py-16 sm:py-20">
+      <div class="mx-auto max-w-content px-5 sm:px-6">
+        <h2 class="text-2xl font-bold tracking-tight text-center">Research Vision</h2>
+        <p class="mt-5 max-w-2xl mx-auto text-justify leading-relaxed text-gray-600 dark:text-gray-300">
+          I work on building next-generation <span class="font-medium text-gray-800 dark:text-gray-200">multi-modal spatio-temporal reasoning systems</span> 
+          that understand and act in complex environments. 
+          My goal is to enable transformative advances in the automation of man-made environments through intelligent multi-agent collaboration, 
+          in which mobile robots will work alongside humans supported by augmented assistance. 
+          More concretely, I am interested in developing systems for multi-modal reasoning over 3D maps, ego-centric and exocentric video feeds, 
+          digital twins, and operational documents, enabling continuous, online execution of environment-level goals.
+        </p>
+
+        <div class="mt-10 grid gap-5 md:grid-cols-3">
+          <!-- 3D & Digital Twins -->
+          <div class="group rounded-2xl border border-gray-100 bg-white p-6 shadow-sm transition-shadow hover:shadow-md dark:border-gray-700 dark:bg-gray-800">
+            <div class="flex h-11 w-11 items-center justify-center rounded-xl bg-blue-50 text-blue-600 dark:bg-blue-950 dark:text-blue-300">
+              <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></svg>
+            </div>
+            <h3 class="mt-4 text-lg font-semibold">3D Understanding</h3>
+            <p class="mt-2 text-sm leading-relaxed text-gray-600 dark:text-gray-400">
+              Compact, semantically rich 3D representations (e.g. Gaussian Splatting) and spatially grounded 3D vision-language
+              models, learned with large-scale pre-training. I extend static 3D maps into digital twins that capture how a scene
+              behaves and responds — not just how it looks.
+            </p>
+          </div>
+          <!-- Ego-centric Video -->
+          <div class="group rounded-2xl border border-gray-100 bg-white p-6 shadow-sm transition-shadow hover:shadow-md dark:border-gray-700 dark:bg-gray-800">
+            <div class="flex h-11 w-11 items-center justify-center rounded-xl bg-emerald-50 text-emerald-600 dark:bg-emerald-950 dark:text-emerald-300">
+              <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5"/><rect x="2" y="6" width="14" height="12" rx="2"/></svg>
+            </div>
+            <h3 class="mt-4 text-lg font-semibold">Ego-centric Understanding</h3>
+            <p class="mt-2 text-sm leading-relaxed text-gray-600 dark:text-gray-400">
+              Spatially aware video models that process the continuous, ego-centric streams of AR glasses and robots — handling
+              rapid motion, occlusion, and long-form memory, and supporting proactive, multi-turn dialogue rather than single-shot
+              answers.
+            </p>
+          </div>
+          <!-- Mobile Robots -->
+          <div class="group rounded-2xl border border-gray-100 bg-white p-6 shadow-sm transition-shadow hover:shadow-md dark:border-gray-700 dark:bg-gray-800">
+            <div class="flex h-11 w-11 items-center justify-center rounded-xl bg-amber-50 text-amber-600 dark:bg-amber-950 dark:text-amber-300">
+              <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2"/><path d="M20 14h2"/><path d="M15 13v2"/><path d="M9 13v2"/></svg>
+            </div>
+            <h3 class="mt-4 text-lg font-semibold">Mobile Robot Deployment</h3>
+            <p class="mt-2 text-sm leading-relaxed text-gray-600 dark:text-gray-400">
+              The applied end goal: mobile robots working alongside AR-equipped humans as continuously sensing, reasoning nodes —
+              detecting deviations from plans, tracking progress, and moving from reactive control toward proactive orchestration
+              in construction, logistics, and healthcare.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ABOUT ==================== -->
+    <section id="about" class="bg-gray-50 py-16 dark:bg-gray-900 sm:py-20">
+      <div class="mx-auto max-w-content px-5 sm:px-6">
+        <h2 class="text-2xl font-bold tracking-tight text-center">About Me</h2>
+        <p class="mt-5 max-w-2xl mx-auto text-justify leading-relaxed text-gray-600 dark:text-gray-300">
+          I am a Research Scientist at
+          <a href="https://insait.ai" target="_blank" rel="noopener" class="text-accent hover:underline">INSAIT</a>,
+          developing spatio-temporal reasoning systems that operate over multi-modal data, such as 3D maps, digital twins, and ego-centric video streams, 
+          to enable collaboration between robots and humans in complex environments.  I completed my PhD at the
+          <a href="https://vision.ee.ethz.ch" target="_blank" rel="noopener" class="text-accent hover:underline">Computer Vision Lab</a>
+          at <a href="https://ethz.ch" target="_blank" rel="noopener" class="text-accent hover:underline">ETH Zürich</a>,
+          advised by <a href="https://insait.ai/prof-luc-van-gool/" target="_blank" rel="noopener" class="text-accent hover:underline">Prof. Luc Van Gool</a>
+          and <a href="https://insait.ai/dr-danda-paudel/" target="_blank" rel="noopener" class="text-accent hover:underline">Dr. Danda Pani Paudel</a>,
+          focusing on 3D reconstruction and visual understanding. Toward the end of my PhD I interned at
+          <a href="https://about.meta.com/realitylabs/" target="_blank" rel="noopener" class="text-accent hover:underline">Meta Reality Labs</a>
+          in Zürich, working on 4D reconstruction. Before that I was a full-time Teaching Assistant at the University of Belgrade,
+          <a href="https://www.etf.bg.ac.rs/en" target="_blank" rel="noopener" class="text-accent hover:underline">School of Electrical Engineering</a>,
+          where I also earned my MSc and BSc in signal processing and control theory. I am a long-time member of the organizing
+          committee of <a href="https://psiml.petlja.org" target="_blank" rel="noopener" class="text-accent hover:underline">PSIML</a>,
+          an annual AI summer school in Serbia.
+        </p>
+
+        <!-- Career timeline -->
+        <div class="relative mt-12">
+          <!-- Desktop: horizontal connecting line -->
+          <div class="absolute top-10 left-[10%] right-[10%] hidden h-0.5 bg-gray-200 dark:bg-gray-700 md:block"></div>
+          <!-- Mobile: vertical connecting line -->
+          <div class="absolute bottom-0 left-8 top-0 w-0.5 bg-gray-200 dark:bg-gray-700 md:hidden"></div>
+
+          <div class="relative grid gap-8 md:grid-cols-4 md:gap-6">
+            <!-- Belgrade -->
+            <a href="https://www.etf.bg.ac.rs/en" target="_blank" rel="noopener" class="group flex items-start gap-4 md:flex-col md:items-center md:gap-3">
+              <div class="relative z-10 flex h-16 w-16 shrink-0 items-center justify-center rounded-full border-2 border-gray-200 bg-white shadow-sm transition-colors group-hover:border-accent dark:border-gray-600 dark:group-hover:border-accent md:h-20 md:w-20">
+                <img src="assets/img/logo_etf.webp" alt="University of Belgrade" class="h-11 w-11 object-contain md:h-14 md:w-14">
+              </div>
+              <div class="text-left md:text-center">
+                <p class="text-xs font-medium text-accent">2013 — 2019</p>
+                <p class="mt-0.5 text-sm font-semibold">BSc, MSc &amp; TA</p>
+                <p class="mt-0.5 text-xs text-gray-500 dark:text-gray-400">Electrical Engineering</p>
+                <p class="text-xs text-gray-500 dark:text-gray-400">University of Belgrade</p>
+              </div>
+            </a>
+            <!-- ETH -->
+            <a href="https://ethz.ch" target="_blank" rel="noopener" class="group flex items-start gap-4 md:flex-col md:items-center md:gap-3">
+              <div class="relative z-10 flex h-16 w-16 shrink-0 items-center justify-center rounded-full border-2 border-gray-200 bg-white shadow-sm transition-colors group-hover:border-accent dark:border-gray-600 dark:group-hover:border-accent md:h-20 md:w-20">
+                <img src="assets/img/logo_eth.webp" alt="ETH Zürich" class="h-11 w-11 object-contain md:h-14 md:w-14">
+              </div>
+              <div class="text-left md:text-center">
+                <p class="text-xs font-medium text-accent">2019 — 2024</p>
+                <p class="mt-0.5 text-sm font-semibold">PhD</p>
+                <p class="mt-0.5 text-xs text-gray-500 dark:text-gray-400">Computer Vision Lab</p>
+                <p class="text-xs text-gray-500 dark:text-gray-400">ETH Zürich</p>
+              </div>
+            </a>
+            <!-- Meta -->
+            <a href="https://about.meta.com/realitylabs/" target="_blank" rel="noopener" class="group flex items-start gap-4 md:flex-col md:items-center md:gap-3">
+              <div class="relative z-10 flex h-16 w-16 shrink-0 items-center justify-center rounded-full border-2 border-gray-200 bg-white shadow-sm transition-colors group-hover:border-accent dark:border-gray-600 dark:group-hover:border-accent md:h-20 md:w-20">
+                <img src="assets/img/logo_meta.webp" alt="Meta Reality Labs" class="h-11 w-11 object-contain md:h-14 md:w-14">
+              </div>
+              <div class="text-left md:text-center">
+                <p class="text-xs font-medium text-accent">2023 — 2024</p>
+                <p class="mt-0.5 text-sm font-semibold">Research Intern</p>
+                <p class="mt-0.5 text-xs text-gray-500 dark:text-gray-400">4D reconstruction</p>
+                <p class="text-xs text-gray-500 dark:text-gray-400">Meta Reality Labs</p>
+              </div>
+            </a>
+            <!-- INSAIT (current — highlighted) -->
+            <a href="https://insait.ai" target="_blank" rel="noopener" class="group flex items-start gap-4 md:flex-col md:items-center md:gap-3">
+              <div class="relative z-10 flex h-16 w-16 shrink-0 items-center justify-center rounded-full border-2 border-accent bg-white shadow-sm md:h-20 md:w-20">
+                <img src="assets/img/logo_insait.webp" alt="INSAIT" class="h-11 w-11 object-contain md:h-14 md:w-14">
+              </div>
+              <div class="text-left md:text-center">
+                <p class="text-xs font-medium text-accent">2025 — Present</p>
+                <p class="mt-0.5 text-sm font-semibold">Research Scientist</p>
+                <p class="mt-0.5 text-xs text-gray-500 dark:text-gray-400">Spatial-intelligence systems</p>
+                <p class="text-xs text-gray-500 dark:text-gray-400">INSAIT</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- PSIML — parallel track -->
+        <div class="mt-6 flex items-center justify-center gap-3">
+          <!-- "+" connector -->
+          <div class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-gray-200 bg-gray-100 text-sm font-bold text-gray-400 dark:border-gray-700 dark:bg-gray-800">+</div>
+          <!-- PSIML node -->
+          <a href="https://psiml.petlja.org" target="_blank" rel="noopener" class="group flex items-start gap-4 md:flex-col md:items-center md:gap-3">
+            <div class="relative z-10 flex h-16 w-16 shrink-0 items-center justify-center rounded-full border-2 border-gray-200 bg-white shadow-sm transition-colors group-hover:border-accent dark:border-gray-600 dark:group-hover:border-accent md:h-20 md:w-20">
+              <img src="assets/img/logo_psiml.webp" alt="PSIML" class="h-11 w-11 object-contain md:h-14 md:w-14">
+            </div>
+            <div class="text-left md:text-center">
+              <p class="text-xs font-medium text-accent">2018 — ongoing</p>
+              <p class="mt-0.5 text-sm font-semibold">Organizing Committee</p>
+              <p class="mt-0.5 text-xs text-gray-500 dark:text-gray-400">AI summer school</p>
+              <p class="text-xs text-gray-500 dark:text-gray-400">PSIML</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== BEYOND RESEARCH ==================== -->
+    <section id="beyond" class="py-16 sm:py-20">
+      <div class="mx-auto max-w-content px-5 sm:px-6">
+        <h2 class="text-2xl font-bold tracking-tight text-center">Beyond Research</h2>
+        <div class="mx-auto mt-8 grid max-w-[50rem] gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <!-- Mentoring -->
+          <div class="rounded-xl border border-gray-100 bg-white p-5 shadow-sm dark:border-gray-700 dark:bg-gray-800">
+            <div class="mb-3 flex h-9 w-9 items-center justify-center rounded-lg bg-accent/10 text-accent">
+              <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3 class="mb-2 text-sm font-semibold">Mentoring</h3>
+            <ul class="list-none space-y-1.5 text-sm text-gray-600 dark:text-gray-400">
+              <li>– Supervised 10 students (mostly PhD) at INSAIT</li>
+              <li>– Supervised 11 MSc/BSc students at ETH Zürich</li>
+              <li>– Committee for 12 BSc theses at University of Belgrade</li>
+            </ul>
+          </div>
+          <!-- Teaching & Services -->
+          <div class="rounded-xl border border-gray-100 bg-white p-5 shadow-sm dark:border-gray-700 dark:bg-gray-800">
+            <div class="mb-3 flex h-9 w-9 items-center justify-center rounded-lg bg-accent/10 text-accent">
+              <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></svg>
+            </div>
+            <h3 class="mb-2 text-sm font-semibold">Teaching &amp; Services</h3>
+            <ul class="list-none space-y-1.5 text-sm text-gray-600 dark:text-gray-400">
+              <li>– Research consultant for 2 AI startups</li>
+              <li>– TA for Computer Vision course at ETH Zürich</li>
+              <li>– TA for 7 courses at University of Belgrade</li>
+            </ul>
+          </div>
+          <!-- Community -->
+          <div class="rounded-xl border border-gray-100 bg-white p-5 shadow-sm dark:border-gray-700 dark:bg-gray-800">
+            <div class="mb-3 flex h-9 w-9 items-center justify-center rounded-lg bg-accent/10 text-accent">
+              <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/></svg>
+            </div>
+            <h3 class="mb-2 text-sm font-semibold">Community</h3>
+            <ul class="list-none space-y-1.5 text-sm text-gray-600 dark:text-gray-400">
+              <li>– Reviewer for CVPR, ECCV, ICCV, WACV, NeurIPS</li>
+              <li>– Organizing annual AI summer school in Serbia</li>
+              <li>– Pushing student research initiatives in Serbia</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PROJECTS ==================== -->
+    <section id="projects" class="bg-gray-50 py-16 dark:bg-gray-900 sm:py-20">
+      <div class="mx-auto max-w-content px-5 sm:px-6">
+        <h2 class="text-2xl font-bold tracking-tight text-center">Projects</h2>
+
+        <div id="projects-filters" class="mt-6 flex flex-wrap gap-2" role="group" aria-label="Filter projects"></div>
+        <div id="projects-grid" class="mt-8 grid gap-5"></div>
+        <p id="projects-empty" class="mt-8 hidden text-sm text-gray-500 dark:text-gray-400">No projects match this filter.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="border-t border-gray-100 py-8 dark:border-gray-800">
+    <div class="mx-auto max-w-content px-5 text-center sm:px-6">
+      <p class="text-sm text-gray-400">© 2026 Nikola Popovic</p>
+    </div>
+  </footer>
+
+  <script src="assets/projects.js" defer></script>
+  <script src="assets/app.js" defer></script>
+</body>
+</html>
