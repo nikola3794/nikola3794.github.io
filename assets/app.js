@@ -68,8 +68,8 @@
     var isAward = b.kind === 'award';
     var cls = isAward ? 'badge badge-award' : 'badge badge-oral';
     var icon = isAward ? ICON.trophy : ICON.mic;
-    // Award badges show no percentage; oral badges render the rate as "top X%".
-    var pct = (!isAward && b.pct) ? ' <span class="badge-pct">(top ' + escapeHtml(b.pct) + ')</span>' : '';
+    // Any badge with a `pct` renders the rate as "(top X%)"; omit it for none.
+    var pct = b.pct ? ' <span class="badge-pct">(top ' + escapeHtml(b.pct) + ')</span>' : '';
     return '<span class="' + cls + '">' + icon + '<span>' + escapeHtml(b.label) + pct + '</span></span>';
   }
   function renderBadges(badges) {

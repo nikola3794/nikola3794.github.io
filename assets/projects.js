@@ -38,17 +38,15 @@
 
      badges   : array   — OPTIONAL. Prominent, eye-catching pills shown above
                           the title. Each: { kind, label, pct }.
-                            kind : 'oral'  → orange pill; the rate is shown as
-                                             "top <pct>" automatically
-                                   'award' → red pill (extra attention); never
-                                             shows a percentage
+                            kind : 'oral'  → orange pill
+                                   'award' → red pill (extra attention)
                             label: text, e.g. 'Oral' or 'Award Nominee'
-                            pct  : oral only — the bare rate, e.g. '0.88%'
-                                   (displayed as "top 0.88%"). Ignored for award.
+                            pct  : OPTIONAL — the bare rate, e.g. '0.88%'
+                                   (displayed as "top 0.88%"). Omit for none.
                           Example:
                             badges: [
                               { kind:'oral',  label:'Oral',          pct:'0.88%' },
-                              { kind:'award', label:'Award Nominee' }
+                              { kind:'award', label:'Award Nominee', pct:'0.46%' }
                             ]
    ========================================================================= */
 (function () {
@@ -86,7 +84,12 @@
     yun_liu: 'Yun Liu',
     menelaos_kanakis: 'Menelaos Kanakis',
     jagruti_patel: 'Jagruti Patel',
-    dengxin_dai: 'Dengxin Dai'
+    dengxin_dai: 'Dengxin Dai',
+    // GraphWrit3R (NeurIPS 2026) co-authors
+    luka_milivojevic: '<a href="https://www.linkedin.com/in/luka-milivojevic/" target="_blank" rel="noopener">Luka Milivojevic</a>',
+    sayan_deb_sarkar: '<a href="https://sayands.github.io" target="_blank" rel="noopener">Sayan Deb Sarkar</a>',
+    sebastian_koch: '<a href="https://kochsebastian.com" target="_blank" rel="noopener">Sebastian Koch</a>',
+    iro_armeni: '<a href="https://ir0.github.io" target="_blank" rel="noopener">Iro Armeni</a>'
   };
 
   /* ------------------------------------------------------------ Conferences */
@@ -124,6 +127,7 @@
 
   /* ------------------------------------------------------------- BibTeX ---- */
   var BIBTEX = {
+    graphwrit3r: '@article{milivojevic2026graphwrit3r,\n  title   = {GraphWrit3R: End-to-End 3D Scene Graph Writing},\n  author  = {Milivojevic, Luka and Popovic, Nikola and Deb Sarkar, Sayan and Koch, Sebastian and Armeni, Iro and Van Gool, Luc and Paudel, Danda Pani},\n  journal = {40th Conference on Neural Information Processing Systems (NeurIPS 2026)},\n  year    = {2026}\n}',
     chorus: '@inproceedings{li2026chorus,\n  title={Chorus: Multi-Teacher Pretraining for Holistic 3D Gaussian Scene Encoding},\n  author={Li, Yue and Ma, Qi and Yang, Runyi and Ma, Mengjiao and Ren, Bin and Popovic, Nikola and Sebe, Nicu and Gevers, Theo and Van Gool, Luc and Paudel, Danda Pani and Oswald, Martin R.},\n  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},\n  year={2026}\n}',
     scenesplatpp: '@inproceedings{ma2025scenesplatpp,\n  title={SceneSplat++: A Large Dataset and Comprehensive Benchmark for Language Gaussian Splatting},\n  author={Ma, Mengjiao and Ma, Qi and Li, Yue and Cheng, Jiahuan and Yang, Runyi and Ren, Bin and Popovic, Nikola and Wei, Mingqiang and Sebe, Nicu and Van Gool, Luc and Gevers, Theo and Oswald, Martin R. and Paudel, Danda Pani},\n  booktitle={Proceedings of the 39th Conference on Neural Information Processing Systems (NeurIPS 2025)},\n  year={2025}\n}',
     scenesplat: '@inproceedings{li2025scenesplat,\n  title={SceneSplat: Gaussian Splatting-based Scene Understanding With Vision-Language Pretraining},\n  author={Li, Yue and Ma, Qi and Yang, Runyi and Li, Huapeng and Ma, Mengjiao and Ren, Bin and Popovic, Nikola and Sebe, Nicu and Konukoglu, Ender and Gevers, Theo and others},\n  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},\n  year={2025}\n}',
@@ -144,6 +148,18 @@
   // tags[] = visible topic pills + filters. important = hidden "Selected" flag.
   var PROJECTS = [
     {
+      title: 'GraphWrit3R: End-to-End 3D Scene Graph Writing',
+      authors: ['luka_milivojevic', 'nikola_popovic', 'sayan_deb_sarkar', 'sebastian_koch', 'iro_armeni', 'luc_van_gool', 'danda_paudel'],
+      conf: 'neurips', year: 2026, note: '',
+      media: { type: 'image', src: 'assets/img/teaser_graphwrit3r.webp' },
+      links: [
+        { label: 'Website', url: 'https://graphwrit3r.insait.ai' },
+        { label: 'Paper', url: 'https://arxiv.org/abs/2609.31595' },
+        { label: 'Code', url: 'https://github.com/insait-institute/GraphWrit3R' }
+      ],
+      bibtex: 'graphwrit3r', tags: ['3D'], important: true
+    },
+    {
       title: 'Chorus: Multi-Teacher Pretraining for Holistic 3D Gaussian Scene Encoding',
       authors: ['yue_li*', 'qi_ma*', 'runyi_yang', 'mengjiao_ma', 'bin_ren', 'nikola_popovic', 'nicu_sebe', 'theo_gevers', 'luc_van_gool', 'danda_paudel', 'martin_r_oswald'],
       conf: 'cvpr', year: 2026, note: '',
@@ -154,10 +170,9 @@
         { label: 'Code', url: 'https://github.com/GaussianWorld/Chorus' }
       ],
       bibtex: 'chorus', tags: ['3D'], important: true,
-      // TODO: replace X% / Y% with the real CVPR 2026 oral rate and award-nominee rate.
       badges: [
-        { kind: 'oral', label: 'Oral', pct: '3.4%' },
-        { kind: 'award', label: 'Award Nominee' }
+        { kind: 'oral', label: 'Oral' },
+        { kind: 'award', label: 'Award Nominee', pct: '0.46%' }
       ]
     },
     {
@@ -183,9 +198,8 @@
         { label: 'Code', url: 'https://github.com/unique1i/SceneSplat' }
       ],
       bibtex: 'scenesplat', tags: ['3D'], important: true,
-      // TODO: replace X% with the real ICCV 2025 oral acceptance rate.
       badges: [
-        { kind: 'oral', label: 'Oral', pct: '2.4%' }
+        { kind: 'oral', label: 'Oral', pct: '0.57%' }
       ]
     },
     {

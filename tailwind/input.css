@@ -47,7 +47,7 @@
 }
 
 /* --------------------------------------------------------------------------
-   Prominent project badges — Oral (orange, "top x%") / Award Nominee (red).
+   Prominent project badges — Oral (orange) / Award Nominee (red), each with an optional "top x%".
    Set via the optional `badges` field per project in assets/projects.js.
    -------------------------------------------------------------------------- */
 .badge {
