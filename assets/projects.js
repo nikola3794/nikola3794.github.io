@@ -220,7 +220,7 @@
       conf: 'ethrc', year: 2024, note: ' · PhD Thesis',
       media: { type: 'image', src: 'assets/img/teaser_phd_thesis.webp' },
       links: [{ label: 'Thesis', url: 'https://www.research-collection.ethz.ch/entities/publication/a0c0309e-1f3d-42c7-8adb-2627f9941d28' }],
-      bibtex: 'phd_thesis', tags: ['3D', '2D'], important: false
+      bibtex: 'phd_thesis', tags: ['3D', '2D'], important: true
     },
     {
       title: 'Rethinking Global Context in Crowd Counting',
